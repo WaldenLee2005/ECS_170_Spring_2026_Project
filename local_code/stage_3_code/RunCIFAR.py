@@ -6,7 +6,7 @@ from local_code.stage_3_code.Method_CNN_CIFAR import Method_CNN_CIFAR
 
 def main():
     # load data
-    with open('/Users/mako/PycharmProjects/ECS_170_Spring_2026_Project/data/stage_3_data/CIFAR', 'rb') as f:
+    with open('./data/stage_3_data/CIFAR', 'rb') as f:
         data = pickle.load(f)
 
     # method

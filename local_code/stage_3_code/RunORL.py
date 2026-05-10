@@ -1,14 +1,49 @@
+import os
 import pickle
+import matplotlib.pyplot as plt
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from local_code.stage_3_code.Method_CNN_ORL import Method_CNN_ORL
 
-with open('/Users/mako/PycharmProjects/ECS_170_Spring_2026_Project/data/stage_3_data/ORL', 'rb') as f:
-    data = pickle.load(f)
+def main():
+    # load data
+    with open('/Users/mako/PycharmProjects/ECS_170_Spring_2026_Project/data/stage_3_data/ORL', 'rb') as f:
+        data = pickle.load(f)
 
-method = Method_CNN_ORL('cnn_orl', 'CNN for orl')
-method.data = data
+    # method
+    method_obj = Method_CNN_ORL('cnn_orl', 'CNN for ORL')
+    method_obj.data = data
 
-result = method.run()
+    os.makedirs('./results/', exist_ok=True)
+    os.makedirs('./plots/', exist_ok=True)
 
-correct = sum(p == t for p, t in zip(result['pred_y'], result['true_y']))
-total   = len(result['true_y'])
-print(f'Accuracy: {100 * correct / total:.2f}%')
+    # run
+    result = method_obj.run()
+    pred_y = result['pred_y']
+    true_y = result['true_y']
+    loss_history = result['loss_history']
+
+    # learning curve
+    plt.figure(figsize=(8, 5))
+    plt.plot(range(1, len(loss_history) + 1), loss_history, marker='o')
+    plt.xlabel('Epoch')
+    plt.ylabel('Training Loss')
+    plt.title('CNN ORL Training Convergence Curve')
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig('./plots/stage3_cnn_orl_convergence.png')
+    plt.show()
+
+    # metrics
+    acc  = accuracy_score(true_y, pred_y)
+    prec = precision_score(true_y, pred_y, average='macro')
+    rec  = recall_score(true_y, pred_y, average='macro')
+    f1   = f1_score(true_y, pred_y, average='macro')
+
+    print('\n--- Evaluation Results ---')
+    print(f'Accuracy:  {acc:.4f}')
+    print(f'Precision: {prec:.4f}')
+    print(f'Recall:    {rec:.4f}')
+    print(f'F1 Score:  {f1:.4f}')
+
+if __name__ == '__main__':
+    main()

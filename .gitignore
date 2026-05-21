@@ -1,1 +1,3 @@
 data/stage_2_data/train.csv
+data/stage_3_data/CIFAR
+data/stage_3_data/MNIST

@@ -1,0 +1,81 @@
+Stage 4 RNN Text Classification and Generation Results
+============================================================
+
+Text Classification Results
+------------------------------------------------------------
+
+Model: RNN
+Accuracy:  0.5731
+Precision: 0.5612
+Recall:    0.6702
+F1 Score:  0.6109
+Confusion Matrix:
+[[5950 6550]
+ [4122 8378]]
+
+Model: LSTM
+Accuracy:  0.7902
+Precision: 0.8677
+Recall:    0.6849
+F1 Score:  0.7655
+Confusion Matrix:
+[[11195  1305]
+ [ 3939  8561]]
+
+Model: GRU
+Accuracy:  0.8338
+Precision: 0.8387
+Recall:    0.8264
+F1 Score:  0.8325
+Confusion Matrix:
+[[10514  1986]
+ [ 2170 10330]]
+
+
+Text Generation Results
+------------------------------------------------------------
+
+Model: RNN
+Final Generation Loss: 0.4156
+
+Starting words: what did the
+Generated text: what did the pebble say to the evidence why aren't you supporting me with this one while preparing
+
+Starting words: why did the
+Generated text: why did the buddhist say to the circle your life is pointless of type light i call 'em
+
+Starting words: how many people
+Generated text: how many people does sean connery arrive at wimbledon tennish you buy new year's ball because he couldn't
+
+Starting words: what do you
+Generated text: what do you call an antelope that wants a big wedding cantelope dont because they keep a little
+
+Model: LSTM
+Final Generation Loss: 0.3715
+
+Starting words: what did the
+Generated text: what did the lazy surgeon say to his nipples you are under a vest an investigator just ice
+
+Starting words: why did the
+Generated text: why did the mobster buy a planner so he could live in peas and hominy on have no
+
+Starting words: how many people
+Generated text: how many people does it take to change a lightbulb just but it will take episodes the dog
+
+Starting words: what do you
+Generated text: what do you call a chef who's stingy with herbs parsleymonious problem they couldn't keep a beet separated
+
+Model: GRU
+Final Generation Loss: 0.3908
+
+Starting words: what did the
+Generated text: what did the fish say when it was covered in salt and pepper a seasoned veteran and pew
+
+Starting words: why did the
+Generated text: why did the girltree fall in love with a cantaloupe like to chase with gt black all in
+
+Starting words: how many people
+Generated text: how many people does it take to make an octopus laugh ten tickles does it take to screw
+
+Starting words: what do you
+Generated text: what do you call a cavator that isnt a cavator anymore an excavator like my grandfather unlike the

@@ -10,8 +10,8 @@ import pandas as pd
 import numpy as np
 
 class Dataset_Loader(dataset):
-    train_file_path = './data/stage_2_data/train.csv'
-    test_file_path = './data/stage_2_data/test.csv'
+    train_file_path = None
+    test_file_path = None
 
     def __init__(self, dName=None, dDescription=None):
         super().__init__(dName, dDescription)

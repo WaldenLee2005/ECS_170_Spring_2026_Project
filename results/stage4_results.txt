@@ -5,77 +5,77 @@ Text Classification Results
 ------------------------------------------------------------
 
 Model: RNN
-Accuracy:  0.5731
-Precision: 0.5612
-Recall:    0.6702
-F1 Score:  0.6109
+Accuracy:  0.6423
+Precision: 0.6219
+Recall:    0.7261
+F1 Score:  0.6699
 Confusion Matrix:
-[[5950 6550]
- [4122 8378]]
+[[6981 5519]
+ [3424 9076]]
 
 Model: LSTM
-Accuracy:  0.7902
-Precision: 0.8677
-Recall:    0.6849
-F1 Score:  0.7655
+Accuracy:  0.8001
+Precision: 0.8368
+Recall:    0.7455
+F1 Score:  0.7885
 Confusion Matrix:
-[[11195  1305]
- [ 3939  8561]]
+[[10683  1817]
+ [ 3181  9319]]
 
 Model: GRU
-Accuracy:  0.8338
-Precision: 0.8387
-Recall:    0.8264
-F1 Score:  0.8325
+Accuracy:  0.8520
+Precision: 0.8292
+Recall:    0.8866
+F1 Score:  0.8569
 Confusion Matrix:
-[[10514  1986]
- [ 2170 10330]]
+[[10217  2283]
+ [ 1418 11082]]
 
 
 Text Generation Results
 ------------------------------------------------------------
 
 Model: RNN
-Final Generation Loss: 0.4156
+Final Generation Loss: 0.4208
 
 Starting words: what did the
-Generated text: what did the pebble say to the evidence why aren't you supporting me with this one while preparing
+Generated text: what did the say to the number eight nice belt left of the ocean and twitches a nervous
 
 Starting words: why did the
-Generated text: why did the buddhist say to the circle your life is pointless of type light i call 'em
+Generated text: why did the cop wake up his son to stop a kid napping do you go to weigh
 
 Starting words: how many people
-Generated text: how many people does sean connery arrive at wimbledon tennish you buy new year's ball because he couldn't
+Generated text: how many people does it take to change an out of place joke about police searches but i
 
 Starting words: what do you
-Generated text: what do you call an antelope that wants a big wedding cantelope dont because they keep a little
+Generated text: what do you get when you play a frank sinatra record at twice the speed shrank sinatra that
 
 Model: LSTM
-Final Generation Loss: 0.3715
+Final Generation Loss: 0.3708
 
 Starting words: what did the
-Generated text: what did the lazy surgeon say to his nipples you are under a vest an investigator just ice
+Generated text: what did the green grape say to the other eye something smells between us and a left is
 
 Starting words: why did the
-Generated text: why did the mobster buy a planner so he could live in peas and hominy on have no
+Generated text: why did the bacteria cross the microscope to get to the other slide the unthinkable back with me
 
 Starting words: how many people
-Generated text: how many people does it take to change a lightbulb just but it will take episodes the dog
+Generated text: how many people does it have a grave mistake woohoo i'm making these up i'm so alright i
 
 Starting words: what do you
-Generated text: what do you call a chef who's stingy with herbs parsleymonious problem they couldn't keep a beet separated
+Generated text: what do you call batman skipping church christian bail because they're jerks easy fantasy his girlfriend and arms
 
 Model: GRU
-Final Generation Loss: 0.3908
+Final Generation Loss: 0.3869
 
 Starting words: what did the
-Generated text: what did the fish say when it was covered in salt and pepper a seasoned veteran and pew
+Generated text: what did the german physicist use to drink his beer ein stein from big nate as told by
 
 Starting words: why did the
-Generated text: why did the girltree fall in love with a cantaloupe like to chase with gt black all in
+Generated text: why did the kurd bury his best with a cantaloupe in space says have a new hampshire joke
 
 Starting words: how many people
-Generated text: how many people does it take to make an octopus laugh ten tickles does it take to screw
+Generated text: how many people wanted to go to a beginning ahem just a small town girl living in a
 
 Starting words: what do you
-Generated text: what do you call a cavator that isnt a cavator anymore an excavator like my grandfather unlike the
+Generated text: what do you call a boomerang that doesn't come back a stick terrible down a pirate to get

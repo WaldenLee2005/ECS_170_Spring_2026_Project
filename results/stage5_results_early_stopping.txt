@@ -1,0 +1,4 @@
+parameters: epochs=300, hidden=32, lr=0.01, weight_decay=0.0005, dropout=0.5, cuda=False, patience=30
+cora: test_loss=0.5955, test_accuracy=0.8290
+citeseer: test_loss=1.3332, test_accuracy=0.6780
+pubmed: test_loss=0.5533, test_accuracy=0.7820
